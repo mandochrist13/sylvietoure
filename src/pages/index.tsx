@@ -10,7 +10,7 @@ import { SKILLS_DATA } from "@/data/skills";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 import Clients from "@/components/client";
 import { useEffect, useState } from "react";
-import Preloader from "@/components/Preloader";
+import Preloader from "@/components/preloader";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
