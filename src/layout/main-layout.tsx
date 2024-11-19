@@ -18,7 +18,9 @@ export interface MainLayoutProps {
 export default function MainLayout(props: MainLayoutProps) {
   return (
     <>
-      <div className={classNames("min-h-screen", montserrat.className)}>
+      <div
+        className={classNames("min-h-screen", "w-full", montserrat.className)}
+      >
         <Navbar routes={routes} />
         <main>{props.children}</main>
       </div>

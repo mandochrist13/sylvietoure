@@ -8,23 +8,35 @@ import ProjectShowcase from "@/components/projects/project-showcase";
 import { PROJECT_SHOWCASE } from "@/data/projects";
 import { SKILLS_DATA } from "@/data/skills";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
+import Clients from "@/components/client";
+import { useEffect, useState } from "react";
+import Preloader from "@/components/Preloader";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Définir un délai pour simuler le chargement de la page, puis désactiver le loader
+    const timer = setTimeout(() => setLoading(false), 6000); // Exemple de 2 secondes
+
+    // Nettoyer le timer en cas de démontage
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       <NextSeo
-        title="Amit Chauhan | Software Developer"
-        description="Explore the professional portfolio of Amit Chauhan, a skilled Software Developer with 2 years of hands-on experience. Discover innovative projects, expertise in modern web technologies, and a passion for creating seamless user experiences."
+        title="Sylvie Touré | Responsable de projet"
+        description="Découvrez le portfolio professionnel de Sylvie Touré, Responsable senior de projets éducatifs et sociaux à fort impact. Explorez des initiatives transformatrices, une expertise en développement de programmes et une passion pour générer des changements significatifs au sein des communautés."
         canonical={siteMetadata.siteUrl}
         openGraph={{
           url: siteMetadata.siteUrl,
-          title: "Amit Chauhan - Software Developer",
+          title: "Sylvie Touré - Responsable de projet",
           description:
-            "Dive into the world of web development with Amit Chauhan. Discover a Software Developer with 2 years of expertise, showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
+            "Découvrez le portfolio professionnel de Sylvie Touré, Responsable senior de projets éducatifs et sociaux à fort impact. Explorez des initiatives transformatrices, une expertise en développement de programmes et une passion pour générer des changements significatifs au sein des communautés.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "Amit Chauhan - Portfolio Image",
+              alt: "Sylvie Touré - Portfolio Image",
             },
           ],
           siteName: siteMetadata.siteName,
@@ -49,7 +61,9 @@ export default function Home() {
           />
         )}
       </Head>
+      {loading && <Preloader />}
       <LandingHero />
+      <Clients />
       <SkillsShowcase skills={SKILLS_DATA} />
       <ProjectShowcase projects={PROJECT_SHOWCASE} />
     </>

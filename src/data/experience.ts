@@ -2,35 +2,57 @@ import { type ExperienceShowcaseListItemProps } from "@/components/experience/ex
 
 export const EXPERIENCE: ExperienceShowcaseListItemProps[] = [
   {
-    title: "Software Developer",
+    title: "Rédactrice en chef et ceo",
     organisation: {
-      name: "Skima",
-      href: "https://skima.ai/",
+      name: "Okoumé Mag",
+      href: "https://www.facebook.com/okoumemag/about",
     },
-    date: "Oct 2023 - Present",
-    location: "Mumbai",
-    description: "Reactjs and Nextjs app development",
+    date: "Oct 2014 - 2018",
+    location: "Libreville",
+    description:
+      "Okoumé magazine est un magazine d'informations generalistes , de lifestyle et tendance",
   },
   {
-    title: "Engineering Trainee",
+    title: "Directrice d'agence",
     organisation: {
-      name: "Hexaware",
-      href: "https://hexaware.com/",
+      name: "BOOM CONSULTING",
+      href: "https://www.facebook.com/okoumemag/about",
     },
-    date: "July 2023 - Sep 2023",
-    location: "Remote",
-    description:
-      "Learned to work we monorepo and got to learn application architecture, scalling and build tooling to improve CI/CD of micro services.",
+    date: "Oct 2012 - 2015",
+    location: "Libreville",
+    description: "BOOM CONSULTINg est une agence de communication",
   },
   {
-    title: "Frontend Developer Intern",
+    title: "Directrice générale",
     organisation: {
-      name: "Master Infotech",
-      href: "https://masterinfotech.com/",
+      name: "Ecole 241",
+      href: "https://www.facebook.com/Ecole241",
     },
-    date: "Winter - 2022",
-    location: "Remote",
+    date: "July 2019 - Aujourd'hui",
+    location: "Libreville",
     description:
-      "Worked on a team responsible for developing new features and updating old codebases to latest technologies. Learned alot about web development and CI/CD development cycle.",
+      "Fabriques Simplon au Gabon qui forment aux new métiers du numérique. La formation est ouverte à tous.",
+  },
+  {
+    title: "Directrice générale",
+    organisation: {
+      name: "Ecole 241 Business",
+      href: "https://ecole241busi.netlify.app/",
+    },
+    date: "Novembre 2020 - Aujourd'hui",
+    location: "Libreville",
+    description:
+      "École 241 Business, est une université des métiers innovants, filiale de l’école 241",
+  },
+  {
+    title: "Coordinatrice Adjointe",
+    organisation: {
+      name: "StartX 241",
+      href: "https://ecole241busi.netlify.app/",
+    },
+    date: "Décembre 2020 - Aujourd'hui",
+    location: "Libreville",
+    description:
+      "StartX 241 est un programme d'accélération de startup/PME avec un focus sur : la Stratégie digitale",
   },
 ];
