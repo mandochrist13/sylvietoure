@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import FadeUp from "@/animation/fade-up";
+import profileImage from "@/public/images/flo8.png";
 
 export default function LandingHero() {
   const [scrollY, setScrollY] = useState(0);
@@ -39,7 +40,7 @@ export default function LandingHero() {
         <div className="mx-auto max-w-7xl">
           <AnimatePresence>
             <FadeUp key="title-main" duration={0.6}>
-              <h1 className="bg-accent bg-clip-text py-2 text-5xl font-bold text-transparent sm:text-6xl md:text-7xl xl:text-8xl">
+              <h1 className="mb-7 bg-accent bg-clip-text py-2 text-5xl font-bold text-transparent sm:text-6xl md:text-7xl lg:text-[80px]">
                 N&apos;tchandi Touré Sylvie
               </h1>
               <span className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
@@ -47,17 +48,14 @@ export default function LandingHero() {
               </span>
             </FadeUp>
             <FadeUp key="description" duration={0.6} delay={0.2}>
-              <div className="mt-8 max-w-3xl text-base font-semibold text-zinc-900 dark:text-zinc-200 sm:text-base md:text-xl">
-                Avec un esprit clair et un cœur ouvert, les possibilités de ce
-                que Dieu va faire à travers moi sont nombreuses et SANS FIN ❤️
-                {/* Skilled in{" "}
-                <span className="font-semibold text-accent">ReactJS</span>,{" "}
-                <span className="font-semibold text-accent">NextJS</span>,{" "}
-                <span className="font-semibold text-accent">SolidJS</span>, and
-                an expert in{" "}
-                <span className="font-semibold text-accent">JavaScript</span>,{" "}
-                <span className="font-semibold text-accent">HTML</span> and{" "}
-                <span className="font-semibold text-accent">CSS</span> */}
+              <div className="mt-8 max-w-3xl text-center font-serif text-lg font-semibold italic text-zinc-800 dark:text-zinc-300 sm:text-xl md:text-2xl">
+                « Avec un esprit clair et un cœur ouvert, les possibilités de ce
+                que Dieu va faire à travers moi sont
+                <span className="text-teal-600 dark:text-teal-400">
+                  {" "}
+                  nombreuses et sans fin{" "}
+                </span>{" "}
+                ❤️ »
               </div>
             </FadeUp>
           </AnimatePresence>
@@ -66,8 +64,8 @@ export default function LandingHero() {
       <Image
         width={1024}
         height={1024}
-        alt="team work"
-        src="/images/flo8.PNG"
+        alt=" profil sylvie "
+        src={profileImage}
         className="h-auto w-full rounded-full object-cover md:w-[50%]"
       />
     </motion.section>

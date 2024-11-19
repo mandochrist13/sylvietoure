@@ -60,7 +60,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "Visualize JSON data format in form of a tree or graph. Application is made using Nextjs, Tailwindcss and Monaco Editor. Design image can be downloaded from this app.",
     sourceCodeHref: "https://github.com/BUMBAIYA/jsontree",
-    liveWebsiteHref: "https://jsontree.vercel.app",
+    liveWebsiteHref: "https://ecole241.online/",
   },
   {
     name: "Ecole 241 Business",
@@ -73,7 +73,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "Keep track of projects and tasks in different categories. Drag and drop card from tables. Assign user and priority to task and many more features. This app is made using Reactjs, Typescript, Tailwindcss and React-beautiful-dnd library.",
     sourceCodeHref: "https://github.com/BUMBAIYA/kanban",
-    liveWebsiteHref: "https://kannban-board.vercel.app",
+    liveWebsiteHref: "https://ecole241busi.netlify.app/",
   },
   {
     name: "Ecole 241 Kids",
@@ -88,7 +88,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     description:
       "Many short and fun games using Reactjs, Typescript and Tailwindcss with collaboration with other developers",
     sourceCodeHref: "https://github.com/BUMBAIYA/ManyGames",
-    liveWebsiteHref: "https://manygames.vercel.app",
+    liveWebsiteHref: "https://241kids.vercel.app/",
   },
   // {
   //   name: "S241",

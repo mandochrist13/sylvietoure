@@ -40,16 +40,6 @@ export default function AboutHero() {
               résultats concrets.
             </p>
           </FadeUp>
-          {/* <FadeUp key="description-2" duration={0.6} delay={0.4}>
-            <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
-              Explore my latest{" "}
-              <Link href="/projects" className="underline underline-offset-4">
-                <span className="text-accent">projets</span>
-              </Link>{" "}
-              showcasing my expertise in Reactjs, Nextjs, Javascript, Typescript
-              and web development.
-            </p>
-          </FadeUp> */}
           <FadeRight
             key="hero-location"
             duration={0.6}

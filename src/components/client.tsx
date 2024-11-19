@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-const CLIENTS = [`"ogo",·"qwa",·"goo",·"jfnlogo"`];
+const CLIENTS = ["ogo", "qwa", "goo", "jfnlogo"];
 
 export function Clients() {
   return (
