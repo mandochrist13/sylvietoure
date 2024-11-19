@@ -53,7 +53,7 @@ export default function Projects() {
             ))}
           </div>
           <div className="mx-auto mt-16 max-w-5xl text-center text-foreground md:mt-28">
-            <span className="text-xl font-bold md:text-2xl">
+            <span className="mt-8 max-w-3xl text-center font-serif text-lg font-semibold italic text-zinc-800 dark:text-zinc-300 sm:text-xl md:text-2xl">
               Au milieu des imperfections de la vie, nous trouvons la force dans
               la foi et la miséricorde divine. Reconnaître nos défauts passés,
               chercher à corriger le présent et demander des conseils pour

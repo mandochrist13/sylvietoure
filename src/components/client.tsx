@@ -22,7 +22,7 @@ export function Clients() {
               width={768}
               height={768}
               className="w-40"
-              src={`/logos/${logo}.PNG`}
+              src={`/logos/${logo}.png`}
             />
           ))}
         </div>
