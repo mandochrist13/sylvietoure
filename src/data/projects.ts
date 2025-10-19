@@ -4,89 +4,62 @@ import { type ProjectShowcaseListItem } from "@/components/projects/project-show
 export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   {
     index: 0,
-    title: "Ecole 241",
+    title: "Association ADN",
     href: "/projects",
-    tags: [
-      "Simplon",
-      "Ambassade de france",
-      "AFD",
-      "Organisation Internationale de la Francophonie",
-    ],
     image: {
-      LIGHT: "/images/projects/ecole241.png",
-      DARK: "/images/projects/ecole241.png",
+      LIGHT: "/images/projects/caxa.jpg",
+      DARK: "/images/projects/caxa.jpg",
     },
   },
   {
     index: 1,
-    title: "Ecole 241 Business",
+    title: "Ruby Academie",
     href: "/projects",
-    tags: [
-      "Simplon",
-      "Ambassade de france",
-      "AFD",
-      "Organisation Internationale de la Francophonie",
-    ],
     image: {
-      LIGHT: "/images/projects/business.png",
-      DARK: "/images/projects/business.png",
+      LIGHT: "/images/projects/5th.jpg",
+      DARK: "/images/projects/5th.jpg",
     },
   },
   {
     index: 2,
-    title: "Ecole 241 Kids",
+    title: "E-learning",
     href: "/projects",
-    tags: [
-      "Simplon",
-      "Ambassade de france",
-      "AFD",
-      "Organisation Internationale de la Francophonie",
-    ],
     image: {
-      LIGHT: "/images/projects/kids.png",
-      DARK: "/images/projects/kids.png",
+      LIGHT: "/images/projects/business.png",
+      DARK: "/images/projects/business.png",
     },
   },
 ];
 
 export const PROJECTS_CARD: ProjectCardProps[] = [
   {
-    name: "Ecole 241",
+    name: "Ruby Academie",
     favicon: "/images/projects/logos/jsontree.ico",
     imageUrl: [
-      "/images/projects/ecole241.png",
-      "/images/projects/ecole241.png",
+      "/images/projects/5th.jpg",
+      // "/images/projects/5th.jpg",
     ],
-    description:
-      "Visualize JSON data format in form of a tree or graph. Application is made using Nextjs, Tailwindcss and Monaco Editor. Design image can be downloaded from this app.",
+    description: "",
     sourceCodeHref: "https://github.com/BUMBAIYA/jsontree",
     liveWebsiteHref: "https://ecole241.online/",
   },
   {
-    name: "Ecole 241 Business",
+    name: "E-learning",
     favicon: "/images/projects/logos/kanban.ico",
     imageUrl: [
       "/images/projects/business.png",
-      "/images/projects/business.png",
-      "/images/projects/business.png",
+      // "/images/projects/business.png",
+      // "/images/projects/business.png",
     ],
-    description:
-      "Keep track of projects and tasks in different categories. Drag and drop card from tables. Assign user and priority to task and many more features. This app is made using Reactjs, Typescript, Tailwindcss and React-beautiful-dnd library.",
+    description: " ",
     sourceCodeHref: "https://github.com/BUMBAIYA/kanban",
     liveWebsiteHref: "https://ecole241busi.netlify.app/",
   },
   {
     name: "Ecole 241 Kids",
     favicon: "/images/projects/logos/manygames.ico",
-    imageUrl: [
-      "/images/projects/kids.png",
-      "/images/projects/kids.png",
-      "/images/projects/kids.png",
-      "/images/projects/kids.png",
-      "/images/projects/kids.png",
-    ],
-    description:
-      "Many short and fun games using Reactjs, Typescript and Tailwindcss with collaboration with other developers",
+    imageUrl: ["/images/projects/caxa.jpg"],
+    description: " ",
     sourceCodeHref: "https://github.com/BUMBAIYA/ManyGames",
     liveWebsiteHref: "https://241kids.vercel.app/",
   },

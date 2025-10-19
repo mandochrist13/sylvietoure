@@ -4,7 +4,7 @@ import { AnimatePresence } from "framer-motion";
 
 import FadeUp from "@/animation/fade-up";
 import FadeRight from "@/animation/fade-right";
-import heroProfileImg from "@/public/images/heroProfile.png";
+import heroProfileImg from "@/public/images/christane.png";
 
 export default function AboutHero() {
   return (
@@ -16,7 +16,7 @@ export default function AboutHero() {
               src={heroProfileImg}
               width={100}
               height={100}
-              className="h-auto w-full rounded-full px-0 xl:px-16"
+              className="h-auto w-full rounded-full px-0 xl:px-10"
               alt="hero image"
               unoptimized
             />
@@ -26,18 +26,17 @@ export default function AboutHero() {
       <div className="sm:1/2 mt-10 w-full lg:w-1/2">
         <AnimatePresence>
           <FadeUp key="title-greeting" duration={0.6}>
-            <h1 className="text-6xl font-bold text-accent sm:text-7xl md:text-6xl lg:text-5xl xl:text-7xl">
-              Hello, Je suis Sylvie Touré
+            <h1 className="text-5xl font-bold text-accent sm:text-7xl md:text-6xl lg:text-6xl">
+              Hello, Je suis Christanelle Mayoukou
             </h1>
           </FadeUp>
           <FadeUp key="description-1" duration={0.6} delay={0.2}>
             <p className="mt-8 text-base font-medium text-zinc-900 dark:text-zinc-300 sm:text-lg md:text-lg">
-              Je transforme les visions en réalité grâce à une gestion
-              stratégique et une exécution ciblée. Que ce soit pour piloter un
-              projet ou développer un produit digital innovant, j&apos;apporte
-              mon engagement pour l&apos;excellence, une approche centrée sur
-              les utilisateurs et une capacité à mobiliser les équipes vers des
-              résultats concrets.
+              Passionnée par la transformation des entreprises et la montée en
+              compétence des talents gabonais, j&apos;accompagne les
+              entreprises, startups et institutions à optimiser leur présence
+              digitale, à renforcer leur visibilité et à atteindre leurs
+              objectifs avec clarté et cohérence.
             </p>
           </FadeUp>
           <FadeRight

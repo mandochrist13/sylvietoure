@@ -25,18 +25,18 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Sylvie Touré | Responsable de projet"
-        description="Découvrez le portfolio professionnel de Sylvie Touré, Responsable senior de projets éducatifs et sociaux à fort impact. Explorez des initiatives transformatrices, une expertise en développement de programmes et une passion pour générer des changements significatifs au sein des communautés."
+        title="Christanelle Mayoukou | Référente digitale"
+        description="Découvrez le portfolio professionnel de Christanelle Mayoukou, experte en digitalisation et stratégie de communication. Créer, former et transformer avec sens et excellence."
         canonical={siteMetadata.siteUrl}
         openGraph={{
           url: siteMetadata.siteUrl,
-          title: "Sylvie Touré - Responsable de projet",
+          title: "Christanelle Mayoukou - Responsable de projet",
           description:
-            "Découvrez le portfolio professionnel de Sylvie Touré, Responsable senior de projets éducatifs et sociaux à fort impact. Explorez des initiatives transformatrices, une expertise en développement de programmes et une passion pour générer des changements significatifs au sein des communautés.",
+            "Découvrez le portfolio professionnel de Christanelle Mayoukou, experte en digitalisation et stratégie de communication. Créer, former et transformer avec sens et excellence.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "Sylvie Touré - Portfolio Image",
+              alt: "Christanelle Mayoukou - Portfolio Image",
             },
           ],
           siteName: siteMetadata.siteName,

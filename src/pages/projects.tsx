@@ -8,18 +8,19 @@ export default function Projects() {
   return (
     <>
       <NextSeo
-        title="Projects by Amit Chauhan - Software Developer Portfolio"
-        description="Explore a collection of projects by Amit Chauhan, a seasoned Software Developer. From innovative web applications to responsive interfaces, discover the depth and diversity of my work."
+        title="Projects by Christanelle Mayoukou - Software Developer Portfolio"
+        description="Explore a collection of projects by Christanelle Mayoukou, a seasoned Software Developer. From innovative web applications to responsive interfaces, discover the depth and diversity of my work."
         canonical={`${siteMetadata.siteUrl}/projects`}
         openGraph={{
           url: `${siteMetadata.siteUrl}/projects`,
-          title: "Discover Projects by Amit Chauhan - Software Developer",
+          title:
+            "Discover Projects by Christanelle Mayoukou - Software Developer",
           description:
-            "Explore a showcase of projects crafted by Amit Chauhan, a Software Developer. Witness the fusion of creativity and technology in web development.",
+            "Explore a showcase of projects crafted by Christanelle Mayoukou, a Software Developer. Witness the fusion of creativity and technology in web development.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "Amit Chauhan - Portfolio Image",
+              alt: "Christanelle Mayoukou - Portfolio Image",
             },
           ],
           siteName: siteMetadata.siteName,
@@ -54,11 +55,10 @@ export default function Projects() {
           </div>
           <div className="mx-auto mt-16 max-w-5xl text-center text-foreground md:mt-28">
             <span className="mt-8 max-w-3xl text-center font-serif text-lg font-semibold italic text-zinc-800 dark:text-zinc-300 sm:text-xl md:text-2xl">
-              Au milieu des imperfections de la vie, nous trouvons la force dans
-              la foi et la miséricorde divine. Reconnaître nos défauts passés,
-              chercher à corriger le présent et demander des conseils pour
-              l&apos;avenir est un acte d&apos;humilité et d&apos;abandon.
-              J&apos;apprends tellement durant ce temps de mise à part 🙏
+              Mon expertise se concentre sur la stratégie de communication
+              digitale et les conseils en digitalisation, permettant aux
+              entreprises, startups et institutions de se démarquer dans un
+              environnement numérique en constante évolution.
             </span>
             {/* <p className="mt-10 text-base md:text-xl">
               Visit my github to see some of the latest projects{" "}
