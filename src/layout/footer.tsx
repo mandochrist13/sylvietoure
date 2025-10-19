@@ -5,9 +5,6 @@ import { siteMetadata } from "@/data/siteMetaData.mjs";
 import { useState } from "react";
 
 export default function Footer() {
-  // const [isVisible, setIsVisible] = useState(false);
-  // const [scrollY, setScrollY] = useState(0);
-  // const sectionRef = useRef<HTMLElement>(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
