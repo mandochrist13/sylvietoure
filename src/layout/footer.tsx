@@ -52,7 +52,7 @@ export default function Footer() {
                   {""}Entrer en contact
                 </span>
               </p>
-              <h2 className=" text-5xl font-bold leading-tight text-white md:text-6xl">
+              <h2 className=" text-4xl font-bold leading-tight text-white md:text-6xl">
                 Parlons de
                 <br />
                 <span className="text-white">Votre Projet</span>
@@ -66,14 +66,15 @@ export default function Footer() {
             </div>
 
             <div className="rounded-lg bg-white p-2 transition-colors duration-300 md:p-6">
-              <p className="mb-2 text-sm font-bold uppercase tracking-widest text-accent">
+              <p className="mb-2 text-sm font-bold uppercase text-accent">
                 Email
               </p>
               <a
                 href="mailto:christanellemayoukou@gmail.com"
-                className="font-mono text-xl text-accent underline  transition-colors"
+                className="flex flex-col font-mono text-accent underline md:flex-row md:text-xl"
               >
-                christanellemayoukou@gmail.com
+                <span>christanelle</span>
+                <span>mayoukou@gmail.com</span>
               </a>
             </div>
 
@@ -83,7 +84,7 @@ export default function Footer() {
               </p>
               <a
                 href="tel:+2417704296"
-                className="font-mono text-xl text-accent underline transition-colors"
+                className="font-mono text-accent underline transition-colors md:text-xl"
               >
                 (241) 77 04 29 65
               </a>
@@ -93,11 +94,13 @@ export default function Footer() {
               <p className="mb-2 text-sm font-bold uppercase tracking-widest text-accent">
                 Localisation
               </p>
-              <p className="font-mono text-xl text-accent">Libreville, Gabon</p>
+              <p className="font-mono text-accent md:text-xl">
+                Libreville, Gabon
+              </p>
             </div>
           </div>
 
-          <div className={`rounded-2xl bg-white p-8 shadow-2xl lg:p-12 `}>
+          <div className={`rounded-2xl bg-white p-4 shadow-2xl lg:p-10 `}>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
@@ -158,7 +161,7 @@ export default function Footer() {
 
               <button
                 type="submit"
-                className="text-primary-foreground hover:bg-primary/90 hover:shadow-primary/50 w-full rounded-lg bg-accent px-8 py-4 text-sm uppercase tracking-widest shadow-lg transition-all duration-300 hover:scale-105"
+                className="text-primary-foreground hover:bg-primary/90 hover:shadow-primary/50 w-full rounded-lg bg-accent px-5 py-4 text-sm uppercase tracking-widest shadow-lg transition-all duration-300 hover:scale-105"
               >
                 Envoyer le Message
               </button>

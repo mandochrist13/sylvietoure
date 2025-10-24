@@ -40,10 +40,10 @@ export default function LandingHero() {
         <div className="mx-auto max-w-7xl">
           <AnimatePresence>
             <FadeUp key="title-main" duration={0.6}>
-              <h1 className="mb-7 bg-accent bg-clip-text py-2 text-5xl font-bold text-transparent sm:text-6xl md:text-7xl lg:text-[80px]">
+              <h1 className="mb-7 bg-accent bg-clip-text py-2 text-center text-4xl font-bold text-transparent md:text-left md:text-7xl lg:text-[80px]">
                 Christanelle MAYOUKOU
               </h1>
-              <span className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
+              <span className="text-center text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-left md:text-3xl">
                 Experte en stratégie de communication et conseils en
                 digitalisation.
               </span>
