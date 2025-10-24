@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { AnimatePresence, motion } from "framer-motion";
 
-import { ArrowTopRight } from "@/components/icons";
+// import { ArrowTopRight } from "@/components/icons";
 import ProjectShowcaseList, {
   type ProjectShowcaseListItem,
 } from "@/components/projects/project-showcase-list";
@@ -103,15 +103,15 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
                   {proj.title}
                 </span>
               </div>
-              <p className="flex max-w-xl flex-wrap gap-2 text-base font-semibold text-accent-foreground sm:text-lg">
+              {/* <p className="flex max-w-xl flex-wrap gap-2 text-base font-semibold text-accent-foreground sm:text-lg">
                 {proj.tags.map((tag, index) => (
                   <span key={index}>#{tag}</span>
                 ))}
-              </p>
+              </p> */}
             </Link>
           ))}
         </div>
-        <Link
+        {/* <Link
           href="/projects"
           className="group relative flex max-w-max items-center gap-4 text-base font-semibold sm:text-lg md:text-xl"
         >
@@ -122,7 +122,7 @@ export default function ProjectShowcase(props: ProjectShowcaseProps) {
           <div className="h-8 w-8">
             <ArrowTopRight className="rotate-45 text-accent transition-transform duration-300 group-hover:rotate-0 group-hover:scale-[1.1]" />
           </div>
-        </Link>
+        </Link> */}
       </div>
     </section>
   );

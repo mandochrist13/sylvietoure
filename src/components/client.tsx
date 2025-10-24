@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-const CLIENTS = ["ogo", "qwa", "goo", "jfnlogo"];
+const CLIENTS = ["1.jpg", "2.png", "3.jpg", "4.jpg", "5.jpg"];
 
 export function Clients() {
   return (
@@ -12,7 +12,7 @@ export function Clients() {
           color="blue-gray"
           className="mb-8 text-xl font-semibold text-accent sm:text-4xl"
         >
-          Mes partenaires
+          Les entreprises pour lesquelles j&apos;ai travaillé
         </h6>
         <div className="flex flex-wrap items-center justify-center gap-6">
           {CLIENTS.map((logo, key) => (
@@ -22,7 +22,7 @@ export function Clients() {
               width={768}
               height={768}
               className="w-40"
-              src={`/logos/${logo}.png`}
+              src={`/logos/${logo}`}
             />
           ))}
         </div>

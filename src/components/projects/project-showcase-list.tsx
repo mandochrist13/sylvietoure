@@ -1,14 +1,11 @@
 import Link from "next/link";
-
 import { motion } from "framer-motion";
-
 import { classNames } from "@/utility/classNames";
 
 export type ProjectShowcaseListItem = {
   index: number;
   title: string;
   href: string;
-  tags: string[];
   image: {
     LIGHT: string;
     DARK?: string;
@@ -28,32 +25,27 @@ export default function ProjectShowcaseList(props: ProjectShowcaseListProps) {
       onHoverStart={() => props.toggleList(props.data.index)}
       onFocus={() => props.toggleList(props.data.index)}
     >
-      <span
-        className={classNames(
-          "hidden text-6xl font-semibold transition-colors duration-300 lg:block",
-          props.activeProject === props.data.index
-            ? "text-accent"
-            : "text-accent/70",
-        )}
-      >
-        {props.data.index + 1}.
-      </span>
-      <span className="text-3xl font-semibold text-accent transition-colors duration-300 sm:text-4xl md:text-5xl lg:hidden">
-        {props.data.index + 1}.
-      </span>
-      <div className="flex flex-col gap-2">
-        <Link href={props.data.href} className="relative max-w-max">
+      <div className="flex gap-2">
+        <span
+          className={classNames(
+            "text-[clamp(1.2rem,3vw,3rem)] font-semibold transition-colors duration-300",
+            props.activeProject === props.data.index
+              ? "text-accent"
+              : "text-accent/70",
+          )}
+        >
+          {props.data.index + 1}.
+        </span>
+
+        <Link href={props.data.href} className="group relative max-w-max">
           <span
             className={classNames(
-              "hidden text-6xl font-semibold transition-colors duration-300 lg:block",
+              "text-[clamp(2rem,5vw,3rem)] font-semibold transition-colors duration-300",
               props.activeProject === props.data.index
                 ? "text-accent"
                 : "text-accent/70",
             )}
           >
-            {props.data.title}
-          </span>
-          <span className="hover:-underline-offset-1 text-3xl font-semibold text-accent transition-colors duration-300 hover:underline sm:text-4xl md:text-5xl lg:hidden">
             {props.data.title}
           </span>
           <span
@@ -63,9 +55,13 @@ export default function ProjectShowcaseList(props: ProjectShowcaseListProps) {
             )}
           ></span>
         </Link>
-        <p className="max-w-xl text-base font-semibold text-muted-foreground sm:text-lg">
-          {props.data.tags.map((tag) => `#${tag} `)}
-        </p>
+
+        {/* Tags */}
+        {/* <p className="max-w-xl text-base font-semibold text-muted-foreground sm:text-lg">
+          {props.data.tags.map((tag) => (
+            <span key={tag} className="mr-2 text-accent/80">#{tag}</span>
+          ))}
+        </p> */}
       </div>
     </motion.div>
   );
